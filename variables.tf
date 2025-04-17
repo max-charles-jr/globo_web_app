@@ -28,6 +28,12 @@ variable "vpc_cidr_block" {
   default     = "10.0.0.0/16"
 }
 
+variable "vpc_public_subnet_count" {
+  type = number
+  description = "Number of public subnets to create."
+  default = 2
+}
+
 variable "vpc_public_subnets_cidr_block" {
   type        = list(string)
   description = "CIDR Block for Public Subnets VPC"
@@ -47,6 +53,12 @@ variable "instance_type" {
   type        = string
   description = "Type for EC2 instance"
   default     = "t3.micro"
+}
+
+variable "instance_count" {
+  type = number
+  description = "Number of instances to create."
+  default = 2
 }
 
 variable "company" {
