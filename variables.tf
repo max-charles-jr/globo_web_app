@@ -29,9 +29,9 @@ variable "vpc_cidr_block" {
 }
 
 variable "vpc_public_subnet_count" {
-  type = number
+  type        = number
   description = "Number of public subnets to create."
-  default = 2
+  default     = 2
 }
 
 variable "vpc_public_subnets_cidr_block" {
@@ -56,9 +56,9 @@ variable "instance_type" {
 }
 
 variable "instance_count" {
-  type = number
+  type        = number
   description = "Number of instances to create."
-  default = 2
+  default     = 2
 }
 
 variable "company" {
@@ -78,13 +78,13 @@ variable "billing_code" {
 }
 
 variable "naming_prefix" {
-  type = string
+  type        = string
   description = "Naming prefix for all resources"
-  default = "globo-web-app"
+  default     = "globo-web-app"
 }
 
 variable "environment" {
-  type = string
+  type        = string
   description = "Environment for the resoures"
-  default = "dev"
+  default     = "dev"
 }
